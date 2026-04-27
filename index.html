@@ -3,21 +3,21 @@
 <head>
   <meta charset='utf-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <title>Khan Construction Co. | Construction and roofing solutions for Inland Empi</title>
-  <meta name='description' content='Khan Construction Co. in Jurupa Valley — a starter site for construction services in the Inland Empire or Orange County.' />
+  <title>Khan Construction Co. | Construction and roofing solutions in Jurupa Valley</title>
+  <meta name='description' content='Khan Construction Co. in Jurupa Valley — a construction and roofing site with public gallery photos and a stronger orange-and-charcoal brand palette.' />
   <link rel='stylesheet' href='styles.css' />
 </head>
 <body>
   <header class='topbar'>
     <div class='container nav'>
       <a class='brand' href='#top' aria-label='Khan Construction Co. home'>
-        <span class='brand-mark' aria-hidden='true'></span>
+        <span class='brand-mark brand-logo' aria-hidden='true'><img src='assets/logo.webp' alt='' aria-hidden='true' /></span>
         <span>Khan Construction Co.</span>
       </a>
       <nav class='nav-links' aria-label='Primary'>
         <a href='#services'>Services</a>
+        <a href='#gallery'>Public project gallery</a>
         <a href='#areas'>Service Area</a>
-        <a href='#approach'>Approach</a>
         <a href='#contact'>Contact</a>
       </nav>
       <a class='btn btn-secondary' href='tel:9098453588'>Call (909) 845-3588</a>
@@ -30,7 +30,7 @@
         <div>
           <div class='kicker'>Construction</div>
           <h1>Construction and roofing solutions for Inland Empire homeowners and property owners.</h1>
-          <p class='lead'>From ADUs to roofing, the site can do a better job explaining the work they already offer.</p>
+          <p class='lead'>From ADUs to roofing, the site now explains the work they already offer.</p>
           <div class='actions'>
             <a class='btn btn-primary' href='tel:9098453588'>Call (909) 845-3588</a>
             <a class='btn btn-secondary' href='#contact'>Request a Quote</a>
@@ -38,19 +38,49 @@
           <p class='note'>A construction and roofing company serving the Inland Empire with services that span new builds, remodeling, and roofs.</p>
         </div>
         <aside class='hero-card'>
-          <h2 style='margin-top:0;font-size:22px;letter-spacing:-0.03em;'>What this site is set up to do</h2>
-          <p style='color:var(--muted);line-height:1.65;margin-top:0;'>A cleaner homepage, clearer service pages, and a simple contact path for homeowners, property managers, or project leads.</p>
+          <div class='hero-photos'>
+            <figure class='photo-frame photo-large'>
+              <img src='assets/hero-roof.jpg' alt='Khan Construction roofing project photo from the company website' fetchpriority='high' />
+            </figure>
+            <div class='photo-stack'>
+              <figure class='photo-frame photo-small'>
+                <img src='assets/hero-build.jpg' alt='Khan Construction construction project photo from the company website' loading='lazy' />
+              </figure>
+              <figure class='photo-frame hero-logo'><img src='assets/logo.webp' alt='' aria-hidden='true' /></figure>
+            </div>
+          </div>
           <div class='stat-grid'>
             <div class='stat'><b>Jurupa Valley</b><span>Primary service area anchor</span></div>
             <div class='stat'><b>Construction</b><span>Local service niche</span></div>
-            <div class='stat'><b>6+ services</b><span>Outlined from public information</span></div>
+            <div class='stat'><b>6+ services</b><span>Organized from public information</span></div>
             <div class='stat'><b>Mobile-first</b><span>Readable, fast starter draft</span></div>
           </div>
         </aside>
       </div>
     </section>
 
-    <section id='services' class='section'>
+    <section class='section photo-showcase'>
+      <div class='section-heading'>
+        <p class='eyebrow'>Photo highlights</p>
+        <h2>Real photos from the public site.</h2>
+        <p class='section-intro'>Pulled from the business's public web presence so the homepage feels more like the company itself.</p>
+      </div>
+      <div class='photo-grid'>
+        <figure class='photo-card'>
+          <img src='assets/photo-1.webp' alt='Primary project photo from the public site' loading='lazy' />
+          <figcaption><strong>Primary project photo from the public site.</strong>Used from the company’s public site.</figcaption>
+        </figure>
+        <figure class='photo-card'>
+          <img src='assets/photo-2.jpg' alt='Project photo from the public site' loading='lazy' />
+          <figcaption><strong>Project photo from the public site.</strong>Used from the company’s public site.</figcaption>
+        </figure>
+        <figure class='photo-card'>
+          <img src='assets/photo-3.jpg' alt='Another project photo from the public site' loading='lazy' />
+          <figcaption><strong>Another project photo from the public site.</strong>Used from the company’s public site.</figcaption>
+        </figure>
+      </div>
+    </section>
+<section id='services' class='section'>
       <div class='container'>
         <div class='section-head'>
           <div>
@@ -60,9 +90,25 @@
         </div>
         <div class='cards'>
           <article class='card'><h3>ADUs and additions</h3><p>Planning and build support for property owners who need more space.</p></article>
-<article class='card'><h3>Roofing</h3><p>Flat, shingle, tile, and metal roof work with clear estimate paths.</p></article>
-<article class='card'><h3>Remodeling</h3><p>Interior upgrades and broader renovation projects.</p></article>
-<article class='card'><h3>Projects</h3><p>A concise gallery that shows finished work by service type.</p></article>
+          <article class='card'><h3>Roofing</h3><p>Flat, shingle, tile, and metal roof work with clear estimate paths.</p></article>
+          <article class='card'><h3>Remodeling</h3><p>Interior upgrades and broader renovation projects.</p></article>
+          <article class='card'><h3>Project gallery</h3><p>A concise gallery that shows finished work by service type.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id='gallery' class='section'>
+      <div class='container'>
+        <div class='section-head'>
+          <div>
+            <h2>Public project gallery</h2>
+            <p>Real photos from the public site gallery, including roofing and construction work.</p>
+          </div>
+        </div>
+        <div class='gallery-grid'>
+          <figure class='card gallery-card'><img src='assets/gallery-detail.jpg' alt='Khan Construction project detail photo' loading='lazy' /><figcaption><strong>Khan Construction project detail photo</strong>Public gallery image showing finished work details</figcaption></figure>
+          <figure class='card gallery-card'><img src='assets/gallery-low-slope.jpg' alt='Khan Construction low-slope roofing photo' loading='lazy' /><figcaption><strong>Khan Construction low-slope roofing photo</strong>Roofing and exterior work from the public website</figcaption></figure>
+          <figure class='card gallery-card'><img src='assets/gallery-build.jpg' alt='Khan Construction build or remodel project photo' loading='lazy' /><figcaption><strong>Khan Construction build or remodel project photo</strong>Construction and remodeling work from the public website</figcaption></figure>
         </div>
       </div>
     </section>
@@ -77,10 +123,10 @@
         </div>
         <div class='pills'>
           <span class='pill'>Jurupa Valley</span>
-<span class='pill'>Riverside</span>
-<span class='pill'>Corona</span>
-<span class='pill'>Fontana</span>
-<span class='pill'>Rancho Cucamonga</span>
+          <span class='pill'>Riverside</span>
+          <span class='pill'>Corona</span>
+          <span class='pill'>Fontana</span>
+          <span class='pill'>Rancho Cucamonga</span>
         </div>
       </div>
     </section>
@@ -95,9 +141,9 @@
         </div>
         <div class='list-grid'>
           <div class='card'><h3>Hero + clear CTA</h3><p>Make it easy to call or request an estimate in one tap.</p></div>
-<div class='card'><h3>Service pages</h3><p>Separate the highest-value jobs into dedicated pages for better clarity and SEO.</p></div>
-<div class='card'><h3>Proof and photos</h3><p>Add real project photos, review snippets, and trust signals as they become available.</p></div>
-<div class='card'><h3>Local relevance</h3><p>Keep the site focused on Jurupa Valley and nearby cities so it feels local fast.</p></div>
+          <div class='card'><h3>Service pages</h3><p>Separate the highest-value jobs into dedicated pages for better clarity and SEO.</p></div>
+          <div class='card'><h3>Proof and photos</h3><p>Add real project photos, review snippets, and trust signals as they become available.</p></div>
+          <div class='card'><h3>Local relevance</h3><p>Keep the site focused on Jurupa Valley and nearby cities so it feels local fast.</p></div>
         </div>
       </div>
     </section>
